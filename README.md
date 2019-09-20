@@ -8,8 +8,10 @@ O relógio é omitido sempre que um emulador ou o kodi é executado e retoma ap�
 
 
   MUITO IMPORTANTE: 
-  Este script substitui os arquivos runcommand-ontstart e runcommand-onend e altera o arquivo rc.local
+  Este script substitui os arquivos runcommand-ontstart e runcommand-onend e altera o arquivo rc.local.
+  
   RECOMENDO QUE SEJA FEITO BACKUP DO SEU RETROPIE PARA O CASO DE ALGUM PROBLEMA ACONTECER
+  
   PARA QUE FUNCIONE CORRETAMENTE É NECESSÁRIO QUE SUA PLACA ESTEJA CONFIGURADA CONFORME SUA TIMEZONE.
 ----------------------------------------------------------------------------------------------------------------------------------
 
