@@ -6,8 +6,7 @@
 ##             DATA E HORA NA TELA DO RETROPIE                  ##
  ###############################################################
 
- 
- 
+  
  
 ##### INSTALA O IMAGEMAGICK (SERVE PARA GERAR IMAGENS PNG A PARTIR DE TEXTO) #####
 sudo apt-get install imagemagick fbi
