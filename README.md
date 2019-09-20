@@ -16,10 +16,15 @@ O relógio é omitido sempre que um emulador ou o kodi é executado e retoma ap�
 
    INSTALAÇÃO (Necessário estar conectado à internet): 
 
-    1- Baixe o arquivo INSTALL.SH e coloque na raiz da pasta de jogos do Retropie  /homi/pi/RetroPie/roms
-    2- Acesse o terminal (com usuário pi) e execute o seguinte comando:
+    1- Abra o terminal e execute o seguinte comando:
+    wget -O - "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/INSTALL.sh" | sudo bash
     
-    Sudo chmod +x /homi/pi/RetroPie/roms/INSTALL.sh; /homi/pi/RetroPie/roms/INSTALL.sh 
+    2- Ainda no terminal edite o arquivo rc.local:
     
-    A instalação será executada e ao final a raspberry será reiniciada automaticamente.
-
+    sudo nano /etc/rc.local
+    crie uma linha acima do "exit" e adicione isso:
+    "/usr/local/bin/TIME.sh" &
+    salve a alteração e reinicie a raspberry com:
+    sudo reboot
+    
+           
