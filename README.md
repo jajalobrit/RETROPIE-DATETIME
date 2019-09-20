@@ -6,13 +6,11 @@ Funcionamento:
 O script verifica a conexão de internet, caso esteja online sincroniza o horário da raspberry pi com a internet e exibe a informação na tela, atualizando de minuto em minuto. Caso não haja conexão é exibido um ícone de "falta de conexão".
 O relógio é omitido sempre que um emulador ou o kodi é executado e retoma após isso.
 
-
+---------------------------------------------------------------------------------------------------------------------------------
   **MUITO IMPORTANTE:** 
-  Este script substitui os arquivos runcommand-ontstart e runcommand-onend e altera o arquivo rc.local.
-  
-  
-  **RECOMENDO QUE SEJA FEITO BACKUP DO SEU RETROPIE PARA O CASO DE ALGUM PROBLEMA ACONTECER
-  PARA QUE FUNCIONE CORRETAMENTE É NECESSÁRIO QUE SUA PLACA ESTEJA CONFIGURADA CONFORME SUA TIMEZONE.
+  Este script substitui os arquivos runcommand-ontstart e runcommand-onend e altera o arquivo rc.local.Recomendo que faça um backup do seu cartão sd antes de prosseguir.
+    
+  Para que funcione corretamente é necessário que sua Raspberry pi esteja configurada conforme sua Timezone.
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
