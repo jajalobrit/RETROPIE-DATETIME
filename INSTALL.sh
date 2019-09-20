@@ -22,11 +22,12 @@ sudo chmod +x /usr/local/bin/pngview;
 cd /usr/local/bin/;
 sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/NONET.png";
 
-cd /usr/local/bin/;
+cd /opt/retropie/configs/all/;
 sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onstart.sh";
-sudo chmod +x /usr/local/bin/runcommand-onstart.sh;
+sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh;
+cd /opt/retropie/configs/all/;
 sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onend.sh";
-sudo chmod +x /usr/local/bin/runcommand-onend.sh;
+sudo chmod +x /opt/retropie/configs/all/runcommand-onend.sh;
 sudo mkdir -p /usr/share/fonts/opentype
 cd /usr/share/fonts/opentype/
 sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/ORBITRON-BLACK.otf";
@@ -55,7 +56,6 @@ fi
 #####FINALIZADO, SÓ AGUARDAR O REBOOT"
 printf "\n\n\n"
 echo "INSTALACAO CONCLUIDA"
-echo " AGORA VOCÊ DEVE FAZER COM QUE O SCRIPT SEJA INICIADO AUTOMATICAMENTE COM O BOOT"
-echo " PARA ISSO SIGA o PASSO 2 DO README"
+echo "AGORA VOCÊ DEVE SEGUIR O PASSO 2 do README"
 
 
