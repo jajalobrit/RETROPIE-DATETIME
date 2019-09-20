@@ -24,10 +24,9 @@ sudo chmod +x /usr/local/bin/pngview;
 cd /usr/local/bin/
 sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/NONET.png";
 
-cd /usr/local/bin/
+cd /opt/retropie/configs/all/
 sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onstart.sh" &&
 sudo chmod +x /usr/local/bin/runcommand-onstart.sh;
-
 sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onend.sh" &&
 sudo chmod +x /usr/local/bin/runcommand-onend.sh;
 
