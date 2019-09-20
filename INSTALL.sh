@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Autor: Jairo Lopes
 
  ###############################################################
@@ -8,34 +9,46 @@
  
  
  
-##### INSTALA O IMAGEMAGIK (SERVE PARA GERAR IMAGENS PNG A PARTIR DE TEXTO) #####
-sudo apt-get install imagemagick fbi
+##### INSTALA O IMAGEMAGICK (SERVE PARA GERAR IMAGENS PNG A PARTIR DE TEXTO) #####
+sudo apt-get install imagemagick fbi &&
 
-##### DOWNLOAD DO SCRIPT E DEMAIS ARQUIVOS NECESSÁRIOS #####
-git clone -b https://github.com/jajalobrit/RETROPIE-DATETIME.git
-cd ~/RETROPIE-DATETIME
-	sudo chmod +x pngview
-	sudo cp pngview /usr/local/bin/
-cd ~/RETROPIE-DATETIME/
-sudo chmod +x TIME.sh
-sudo cp TIME.sh /usr/local/bin
-sudo cp NONET.png /usr/local/bin
-sudo chmod +x runcommand-onstart.sh
-sudo chmod +x runcommand-onend.sh.sh
-sudo cp runcommand-onstart.sh /opt/retropie/configs/all
-sudo cp runcommand-onend.sh /opt/retropie/configs/all
+##### DOWNLOAD DOS ARQUIVOS NECESSÁRIOS #####
+cd /usr/local/bin/
+sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/TIME.sh" &&
+sudo chmod +x /usr/local/bin/TIME.sh;
 
+cd /usr/local/bin/
+sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/pngview" &&
+sudo chmod +x /usr/local/bin/pngview;
 
+cd /usr/local/bin/
+sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/NONET.png";
 
-##### ADICIONA FONTE #####
+cd /usr/local/bin/
+sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onstart.sh" &&
+sudo chmod +x /usr/local/bin/runcommand-onstart.sh;
+
+sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onend.sh" &&
+sudo chmod +x /usr/local/bin/runcommand-onend.sh;
+
 sudo mkdir -p /usr/share/fonts/opentype
-sudo cp ORBITRON-BLACK.otf /usr/share/fonts/opentype/
+cd /usr/share/fonts/opentype/
+sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/ORBITRON-BLACK.otf";
 
 if
 [ -d "/home/pi/RetroPie/roms/kodi" ]; then
+cd /home/pi/RetroPie/roms/kodi/
+sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
 sudo chmod +x kodi.sh
-sudo cp kodi.sh /home/pi/RetroPie/roms/kodi/
 fi
+
+if
+[ -d "/home/pi/RetroPie/roms/ports" ]; then
+cd /home/pi/RetroPie/roms/ports/
+sudo wget "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
+sudo chmod +x kodi.sh
+fi
+
 
 
 ##### COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE DURANTE O BOOT #####
@@ -50,5 +63,4 @@ echo "O SISTEMA REINICIARA AUTOMATICAMENTE"
 echo "POR FAVOR AGUARDE."
 sleep 3
 sudo reboot
-
 
