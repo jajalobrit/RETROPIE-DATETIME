@@ -28,21 +28,21 @@ sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh;
 cd /opt/retropie/configs/all/;
 sudo wget -O runcommand-onend.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onend.sh";
 sudo chmod +x /opt/retropie/configs/all/runcommand-onend.sh;
-sudo mkdir -p /usr/share/fonts/opentype
+sudo mkdir -p /usr/share/fonts/opentype &&
 cd /usr/share/fonts/opentype/
 sudo wget -O ORBITRON-BLACK.otf "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/ORBITRON-BLACK.otf";
 
 if
 [ -d "/home/pi/RetroPie/roms/kodi" ]; then
 cd /home/pi/RetroPie/roms/kodi/
-sudo wget -O   "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
+sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
 sudo chmod +x kodi.sh
 fi
 
 if
 [ -d "/home/pi/RetroPie/roms/ports" ]; then
 cd /home/pi/RetroPie/roms/ports/
-sudo wget -O   "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
+sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
 sudo chmod +x kodi.sh
 fi
 
