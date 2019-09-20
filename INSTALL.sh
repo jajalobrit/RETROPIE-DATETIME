@@ -6,42 +6,43 @@
 ##             DATA E HORA NA TELA DO RETROPIE                  ##
  ###############################################################
 
-  
+ 
+ 
  
 ##### INSTALA O IMAGEMAGICK (SERVE PARA GERAR IMAGENS PNG A PARTIR DE TEXTO) #####
 sudo apt-get install imagemagick fbi
 
 ##### DOWNLOAD DOS ARQUIVOS NECESSÁRIOS #####
 cd /usr/local/bin/;
-sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/TIME.sh";
+sudo wget -O TIME.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/TIME.sh";
 sudo chmod +x /usr/local/bin/TIME.sh;
 cd /usr/local/bin/;
-sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/pngview";
+sudo wget -O pngview "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/pngview";
 sudo chmod +x /usr/local/bin/pngview;
 cd /usr/local/bin/;
-sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/NONET.png";
+sudo wget -O NONET.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/NONET.png";
 
 cd /opt/retropie/configs/all/;
-sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onstart.sh";
+sudo wget -O runcommand-onstart.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onstart.sh";
 sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh;
 cd /opt/retropie/configs/all/;
-sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onend.sh";
+sudo wget -O runcommand-onend.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onend.sh";
 sudo chmod +x /opt/retropie/configs/all/runcommand-onend.sh;
 sudo mkdir -p /usr/share/fonts/opentype
 cd /usr/share/fonts/opentype/
-sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/ORBITRON-BLACK.otf";
+sudo wget -O ORBITRON-BLACK.otf "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/ORBITRON-BLACK.otf";
 
 if
 [ -d "/home/pi/RetroPie/roms/kodi" ]; then
 cd /home/pi/RetroPie/roms/kodi/
-sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
+sudo wget -O   "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
 sudo chmod +x kodi.sh
 fi
 
 if
 [ -d "/home/pi/RetroPie/roms/ports" ]; then
 cd /home/pi/RetroPie/roms/ports/
-sudo wget -O "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
+sudo wget -O   "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
 sudo chmod +x kodi.sh
 fi
 
