@@ -49,17 +49,9 @@ sudo chmod +x kodi.sh
 fi
 
 
-
-##### COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE DURANTE O BOOT #####
-
-sudo sed '/fi/ a "/usr/local/bin/TIME.sh"' /etc/rc.local > tmp.local && mv -f tmp.local /etc/rc.local >/dev/null
-
-
-#####FINALIZADO, SÓ AGUARDAR O REBOOT"
+#####FINALIZANDO#####
 printf "\n\n\n"
 echo "INSTALACAO CONCLUIDA"
-echo "O SISTEMA REINICIARA AUTOMATICAMENTE"
-echo "POR FAVOR AGUARDE."
-sleep 3
-sudo reboot
-
+echo " AGORA VOCÊ DEVE FAZER COM QUE O SCRIPT SEJA INICIADO AUTOMATICAMENTE COM O BOOT"
+echo " PARA ISSO SIGA o PASSO 3 DO README"
+echo "EM SEGUIDA REINICIE A RASPBERRY PI" 
