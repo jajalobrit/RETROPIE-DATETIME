@@ -34,3 +34,14 @@ Com a raspberry conectada à internet abra o terminal e execute o seguinte coman
 **wget -O - "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/INSTALL.sh" | sudo bash**
     
 A instalação será realizada automaticamente e a Raspberry será reiniciada.   
+
+
+<br />Caso queira trocar a cor do relógio basta abrir o terminal e executar o seguinte comando trocando COR  pelo nome da cor desejada: 
+
+**find /usr/local/bin/ -iname TIME.sh -exec sudo sed -i 's,-fill .*. -font,-fill COR -font,g' {} \; sudo pkill TIME.sh; sudo pkill -u root pngview, TIME.sh**
+
+<br />Lista com as cores disponíveis: 
+https://imagemagick.org/script/color.php
+
+
+
