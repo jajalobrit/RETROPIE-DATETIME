@@ -86,12 +86,11 @@ echo -e "\033[1;32m KODI.SH OK! \033[0m"
 fi
 
 ##### COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE DURANTE O BOOT #####
-if fgrep -q -e "/usr/local/bin/TIME.sh" /etc/rc.local
-then
+if fgrep -q -e "/usr/local/bin/TIME.sh" /etc/rc.local; then
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 else
-	find /etc/ -iname rc.local -exec sudo sed -i '$ s,exit 0,/usr/local/bin/TIME.sh \&\
+find /etc/ -iname rc.local -exec sudo sed -i '$ s,exit 0,/usr/local/bin/TIME.sh \&\
 exit 0,g' {} \;
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
