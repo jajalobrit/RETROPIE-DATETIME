@@ -3,18 +3,18 @@
 
 
 
-Funcionamento: 
+**FUNCIONAMENTO: **
 
 O script verifica a conexão , caso esteja online ele sincroniza o horário da raspberry pi com a internet e exibe a informação de data e hora na tela, atualizando de minuto em minuto.
 Caso a raspberry esteja offline é exibido um ícone de "sem conexão".
 O relógio é omitido sempre que um emulador ou o kodi é executado e retoma após isso.
 
 ---------------------------------------------------------------------------------------------------------------------------------
-IMPORTANTE:
+**IMPORTANTE:**
 Para que data e hora sejam exibidas corretamente é necessário que sua Raspberry pi esteja configurada conforme sua Timezone.
 
-Para configurar:
- 
+
+Para configurar: 
 1-Entre no menu do Retropie e vá até: >Raspiconfig >4 Localisation Options >I1 Change Locale 
 2-Desmarque a opção en_GB.UTF-8 UTF-8 que vem marcada por padrão
 3-Procure e marque a opção pt_BR.UTF-8 UTF-8 e dê enter, na próxima tela selecione novamente pt_BR.UTF-8 UTF-8, selecione "OK" e dê enter.
