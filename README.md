@@ -16,7 +16,10 @@ O relógio é omitido sempre que um emulador ou o kodi é executado e retoma ap�
    INSTALAÇÃO (Necessário estar conectado à internet): 
 
     1- Abra o terminal e execute o seguinte comando:
+    
     wget -O - "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/INSTALL.sh" | sudo bash
+    
+    
     
     A instalação será realizada automaticamente e a Raspberry será reiniciada.
     
