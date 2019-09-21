@@ -39,7 +39,7 @@ A instalação será realizada automaticamente e a Raspberry será reiniciada.
 
 <br />Caso queira trocar a cor do relógio basta abrir o terminal e executar o seguinte comando trocando **NOME-DA-COR**  pelo nome da cor desejada: 
 
-<br />**find /usr/local/bin/ -iname TIME.sh -exec sudo sed -i 's,-fill .*. -font,-fill NOME-DA-COR -font,g' {} \\; sudo reboot**  
+<br />**find /usr/local/bin/ -iname TIME.sh -exec sudo sed -i 's,-fill .*. -font,-fill NOME-DA-COR -font,g' {} \\;**  
 <br />Em seguida reinicie a Raspberry para a que a nova cor passe a ser exibida.  
 
 
