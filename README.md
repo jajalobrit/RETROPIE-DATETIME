@@ -27,7 +27,7 @@ Para configurar:
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
-**INSTALAÇÃO: 
+**INSTALAÇÃO:** 
 
 Com a raspberry conectada à internet abra o terminal e execute o seguinte comando:
     
