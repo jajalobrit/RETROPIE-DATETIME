@@ -14,7 +14,6 @@ O relógio é omitido sempre que um emulador ou o kodi é executado e retoma ap�
 
 Para que data e hora sejam exibidas corretamente é necessário que sua Raspberry pi esteja configurada conforme sua Timezone.
 
-
 Para configurar: 
 1-Entre no menu do Retropie e vá até: >Raspiconfig >4 Localisation Options >I1 Change Locale 
 2-Desmarque a opção en_GB.UTF-8 UTF-8 que vem marcada por padrão
