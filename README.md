@@ -1,5 +1,5 @@
 <br />***#RELOGIO PARA O RETROPIE***  
-(Adiciona data e hora na tela do Emulationstation no Retropie)
+<br />(Adiciona data e hora na tela do Emulationstation no Retropie)   
 
 
 
