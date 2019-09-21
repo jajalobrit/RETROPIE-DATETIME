@@ -2,9 +2,9 @@
 
 # Autor: Jairo Lopes
 
- ###############################################################
-##             DATA E HORA NA TELA DO RETROPIE                  ##
- ###############################################################
+                                  ###############################################################
+   ################################             DATA E HORA NA TELA DO RETROPIE                  ##################################
+                                  ###############################################################
 
    
 ##### INSTALA O IMAGEMAGICK (SERVE PARA GERAR IMAGENS PNG A PARTIR DE TEXTO) #####
@@ -13,10 +13,10 @@ echo "INSTALANDO IMAGEMAGICK!"
 sudo apt-get install imagemagick fbi &&
 printf "\n\n"
 echo -e "\033[1;32m IMAGEMAGICK OK! \033[0m"
-sleep 1
 
 
-##### DOWNLOAD DOS ARQUIVOS NECESSÁRIOS #####
+
+############################################ DOWNLOAD DOS ARQUIVOS NECESSÁRIOS ##################################################
 printf "\n\n"
 echo "BAIXANDO ARQUIVOS"
 cd /usr/local/bin/;
@@ -29,10 +29,11 @@ cd /usr/local/bin/;
 sudo wget -O NONET.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/NONET.png" &&
 printf "\n\n"
 echo -e "\033[1;32m ARQUIVOS OK! \033[0m"
-sleep 1
 
 
-##### CONFIGURA RUNCOMMANDS ####
+
+########################################### CONFIGURA RUNCOMMANDS ###############################################################
+echo "CONFIGURANDO RUNCOMMAND-ONSTART"
 if
 [ -d "/opt/retropie/configs/all/runcommand-onstart.sh" ]; then
    echo -e "sudo pkill TIME.sh
@@ -46,8 +47,8 @@ sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh;
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 fi
-sleep 1
 
+echo "CONFIGURANDO RUNCOMMAND-ONEND"
 if
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
    echo -e "/usr/local/bin/TIME.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
@@ -60,9 +61,10 @@ sudo chmod +x /opt/retropie/configs/all/runcommand-onend.sh;
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
 fi
-sleep 1
 
-##### INSTALA FONTE ######
+
+######################################################### INSTALA FONTE ##########################################################
+echo "INSTALANDO FONTE"
 sudo mkdir -p /usr/share/fonts/opentype &&
 cd /usr/share/fonts/opentype/
 sudo wget -O ORBITRON-BLACK.otf "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/ORBITRON-BLACK.otf" &&
@@ -70,7 +72,8 @@ printf "\n\n"
 echo -e "\033[1;32m FONTE OK! \033[0m"
 sleep 1
 
-##### CONFIGURA KODI.SH #####
+####################################################### CONFIGURA KODI.SH ########################################################
+echo "CONFIGURANDO KODI.SH"
 if
 [ -d "/home/pi/RetroPie/roms/kodi" ]; then
 cd /home/pi/RetroPie/roms/kodi/
@@ -79,7 +82,6 @@ sudo chmod +x kodi.sh
 printf "\n\n"
 echo -e "\033[1;32m KODI.SH OK! \033[0m"
 fi
-sleep 1
 
 if
 [ -d "/home/pi/RetroPie/roms/ports" ]; then
@@ -89,9 +91,10 @@ sudo chmod +x kodi.sh
 printf "\n\n"
 echo -e "\033[1;32m KODI.SH OK! \033[0m"
 fi
-sleep 1
 
-##### COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE DURANTE O BOOT #####
+
+############################ COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE #################################################
+echo "CONFIGURANDO RC.LOCAL"
 if fgrep -q -e "TIME.sh" /etc/rc.local
 then
 printf "\n\n"
@@ -102,12 +105,12 @@ exit 0,g' {} \ &&
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 fi
-sleep 1
+
 
 
 ##### FINALIZANDO ######
 printf "\n\n\n"
 echo -e "\033[1;32m INSTALAÇÃO CONCLUÍDA \033[0m"
-echo -e "\033[1;32m REINICIANDO EM 3 SEGUNDOS \033[0m"
-sleep 3 
+echo -e "\033[1;32m REINICIANDO EM 5 SEGUNDOS \033[0m"
+sleep 5 
 sudo reboot
