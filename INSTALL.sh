@@ -95,7 +95,7 @@ fi
 
 ############################ COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE #################################################
 echo "CONFIGURANDO RC.LOCAL"
-if fgrep -q -e "TIME.sh" /etc/rc.local
+if fgrep -q -e "/usr/local/bin/TIME.sh &" /etc/rc.local
 then
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
