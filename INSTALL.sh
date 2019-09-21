@@ -10,7 +10,7 @@
 ##### INSTALA O IMAGEMAGICK (SERVE PARA GERAR IMAGENS PNG A PARTIR DE TEXTO) #####
 printf "\n\n"
 echo "INSTALANDO IMAGEMAGICK!"
-sudo apt-get install imagemagick fbi
+yes | sudo apt-get install imagemagick fbi &&
 printf "\n\n"
 echo -e "\033[1;32m IMAGEMAGICK OK! \033[0m"
 
