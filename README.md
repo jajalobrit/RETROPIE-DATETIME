@@ -3,7 +3,7 @@
 
 
 
-**FUNCIONAMENTO: **
+**FUNCIONAMENTO:**
 
 O script verifica a conexão , caso esteja online ele sincroniza o horário da raspberry pi com a internet e exibe a informação de data e hora na tela, atualizando de minuto em minuto.
 Caso a raspberry esteja offline é exibido um ícone de "sem conexão".
@@ -11,6 +11,7 @@ O relógio é omitido sempre que um emulador ou o kodi é executado e retoma ap�
 
 ---------------------------------------------------------------------------------------------------------------------------------
 **IMPORTANTE:**
+
 Para que data e hora sejam exibidas corretamente é necessário que sua Raspberry pi esteja configurada conforme sua Timezone.
 
 
