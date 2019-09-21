@@ -95,6 +95,7 @@ else
 exit 0,g' {} \;
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
+fi
 
 
 ##### FINALIZANDO ######
