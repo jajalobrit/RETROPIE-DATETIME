@@ -84,7 +84,7 @@ echo -e "\033[1;32m KODI.SH OK! \033[0m"
 fi
 
 if
-[ -d "/home/pi/RetroPie/roms/ports" ]; then
+[ -d "/home/pi/RetroPie/roms/ports/kodi.sh" ]; then
 cd /home/pi/RetroPie/roms/ports/
 sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh" &&
 sudo chmod +x kodi.sh
