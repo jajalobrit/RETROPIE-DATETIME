@@ -100,8 +100,7 @@ then
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 else
-	find /etc/ -iname rc.local -exec sudo sed -i '$ s,exit 0,/usr/local/bin/TIME.sh \&\
-exit 0,g' {} \ &&
+sudo sed -i '/fi/a /usr/local/bin/TIME.sh &' /etc/rc.local
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 fi
