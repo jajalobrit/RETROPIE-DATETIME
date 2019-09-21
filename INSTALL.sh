@@ -13,6 +13,7 @@ echo "INSTALANDO IMAGEMAGICK!"
 sudo apt-get install imagemagick fbi &&
 printf "\n\n"
 echo -e "\033[1;32m IMAGEMAGICK OK! \033[0m"
+sleep 1
 
 
 ##### DOWNLOAD DOS ARQUIVOS NECESSÁRIOS #####
@@ -28,6 +29,7 @@ cd /usr/local/bin/;
 sudo wget -O NONET.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/NONET.png" &&
 printf "\n\n"
 echo -e "\033[1;32m ARQUIVOS OK! \033[0m"
+sleep 1
 
 
 ##### CONFIGURA RUNCOMMANDS ####
@@ -44,6 +46,7 @@ sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh;
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 fi
+sleep 1
 
 if
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
@@ -57,7 +60,7 @@ sudo chmod +x /opt/retropie/configs/all/runcommand-onend.sh;
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
 fi
-
+sleep 1
 
 ##### INSTALA FONTE ######
 sudo mkdir -p /usr/share/fonts/opentype &&
@@ -65,7 +68,7 @@ cd /usr/share/fonts/opentype/
 sudo wget -O ORBITRON-BLACK.otf "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/ORBITRON-BLACK.otf" &&
 printf "\n\n"
 echo -e "\033[1;32m FONTE OK! \033[0m"
-
+sleep 1
 
 ##### CONFIGURA KODI.SH #####
 if
@@ -76,6 +79,7 @@ sudo chmod +x kodi.sh
 printf "\n\n"
 echo -e "\033[1;32m KODI.SH OK! \033[0m"
 fi
+sleep 1
 
 if
 [ -d "/home/pi/RetroPie/roms/ports" ]; then
@@ -85,6 +89,7 @@ sudo chmod +x kodi.sh
 printf "\n\n"
 echo -e "\033[1;32m KODI.SH OK! \033[0m"
 fi
+sleep 1
 
 ##### COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE DURANTE O BOOT #####
 if fgrep -q -e "TIME.sh" /etc/rc.local
@@ -97,6 +102,7 @@ exit 0,g' {} \ &&
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 fi
+sleep 1
 
 
 ##### FINALIZANDO ######
