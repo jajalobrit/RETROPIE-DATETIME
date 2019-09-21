@@ -76,14 +76,14 @@ printf "\n\n"
 echo -e "\033[1;32m KODI.SH OK! \033[0m"
 fi
 
-#if
-#[ -d "/home/pi/RetroPie/roms/ports" ]; then
-#cd /home/pi/RetroPie/roms/ports/
-#sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
-#sudo chmod +x kodi.sh
-#printf "\n\n"
-#echo -e "\033[1;32m KODI.SH OK! \033[0m"
-#fi
+if
+[ -d "/home/pi/RetroPie/roms/ports" ]; then
+cd /home/pi/RetroPie/roms/ports/
+sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/kodi.sh";
+sudo chmod +x kodi.sh
+printf "\n\n"
+echo -e "\033[1;32m KODI.SH OK! \033[0m"
+fi
 
 ##### COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE DURANTE O BOOT #####
 if fgrep -q -e "/usr/local/bin/TIME.sh" /etc/rc.local
@@ -97,7 +97,7 @@ printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 
 
-#####FINALIZADO"
+##### FINALIZANDO ######
 printf "\n\n\n"
 echo -e "\033[1;32m INSTALAÇÃO CONCLUÍDA \033[0m"
 echo -e "\033[1;32m REINICIANDO EM 3 SEGUNDOS \033[0m"
