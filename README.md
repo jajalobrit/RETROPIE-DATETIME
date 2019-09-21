@@ -31,7 +31,8 @@ Para configurar:
 **INSTALAÇÃO:** 
 Com a raspberry conectada à internet abra o terminal e execute o seguinte comando:
     
-<div style="display: inline">**wget -O - "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/INSTALL.sh" | sudo bash**
+<div style="display: inline">
+ **wget -O - "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/INSTALL.sh" | sudo bash**
     
 A instalação será realizada automaticamente e a Raspberry será reiniciada.   
 
