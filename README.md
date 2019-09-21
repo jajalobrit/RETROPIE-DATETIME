@@ -1,4 +1,4 @@
-<br />***#RELOGIO PARA O RETROPIE*** 
+***#RELOGIO PARA O RETROPIE***   
 (Adiciona data e hora na tela do Emulationstation no Retropie)
 
 
