@@ -23,7 +23,7 @@ Para configurar:
 <br />5-Selecione "America" e em seguida OK 
  <br />6-Agora selecione SAO_PAULO e OK 
  <br />7-FINISH para sair 
- <br />8-Reinicie a Rapsberry 
+ <br />8-Reinicie a Raspberry 
  
 ----------------------------------------------------------------------------------------------------------------------------------
 
