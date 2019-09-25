@@ -106,6 +106,9 @@ echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 fi
 
 
+############################# COLOCA A lAYER DAS SPLASHSCREENS ACIMA DO RELÓGIO #################################################
+find /opt/retropie/supplementary/splashscreen/ -iname asplashscreen.sh -exec sudo sed -i 's,10000,999999,g' {} \;
+
 
 ##### FINALIZANDO ######
 printf "\n\n\n"
