@@ -39,6 +39,11 @@ then
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 elif
+fgrep -q -e "sudo pkill radio.sh" /opt/retropie/configs/all/runcommand-onstart.sh
+then
+printf "\n\n"
+echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
+elif
 [ -d "/opt/retropie/configs/all/runcommand-onstart.sh" ]; then
    echo -e "sudo pkill TIME.sh
 sudo pkill -u root pngview" >> /opt/retropie/configs/all/runcommand-onstart.sh
@@ -57,6 +62,11 @@ if fgrep -q -e "/usr/local/bin/TIME.sh &" /opt/retropie/configs/all/runcommand-o
 then
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
+elif
+fgrep -q -e "radio.sh" /opt/retropie/configs/all/runcommand-onend.sh
+then
+printf "\n\n"
+echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 elif
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
    echo -e "/usr/local/bin/TIME.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
