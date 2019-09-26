@@ -1,4 +1,4 @@
-***#RELOGIO PARA O RETROPIE***   
+***RELOGIO PARA O RETROPIE***   
 (Adiciona data e hora atualizadas pela internet no Retropie)
 
 
