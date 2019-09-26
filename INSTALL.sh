@@ -34,7 +34,11 @@ echo -e "\033[1;32m ARQUIVOS OK! \033[0m"
 
 ########################################### CONFIGURA RUNCOMMANDS ###############################################################
 echo "CONFIGURANDO RUNCOMMAND-ONSTART"
-if
+if fgrep -q -e "sudo pkill TIME.sh" /opt/retropie/configs/all/runcommand-onstart.sh
+then
+printf "\n\n"
+echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
+elif
 [ -d "/opt/retropie/configs/all/runcommand-onstart.sh" ]; then
    echo -e "sudo pkill TIME.sh
 sudo pkill -u root pngview" >> /opt/retropie/configs/all/runcommand-onstart.sh
@@ -49,7 +53,11 @@ echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 fi
 
 echo "CONFIGURANDO RUNCOMMAND-ONEND"
-if
+if fgrep -q -e "/usr/local/bin/TIME.sh &" /opt/retropie/configs/all/runcommand-onend.sh
+then
+printf "\n\n"
+echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
+elif
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
    echo -e "/usr/local/bin/TIME.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
 printf "\n\n"
