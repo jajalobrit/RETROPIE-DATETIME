@@ -6,7 +6,7 @@
 
 
 ***RELÓGIO PARA O RETROPIE***   
-(Adiciona data e hora atualizadas pela internet no Retropie)
+(Adiciona data e hora atualizadas pela internet no Retropie para Raspberry Pi)
 
 
 
