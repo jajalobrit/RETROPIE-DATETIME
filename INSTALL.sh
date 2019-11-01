@@ -130,7 +130,7 @@ fi
 find /opt/retropie/supplementary/splashscreen/ -iname asplashscreen.sh -exec sudo sed -i 's,10000,999999,g' {} \;
 
 
-##### FINALIZANDO ######
+################################################# FINALIZANDO ##################################################################
 printf "\n\n\n"
 echo -e "\033[1;32m INSTALAÇÃO CONCLUÍDA \033[0m"
 echo -e "\033[1;32m REINICIANDO EM 5 SEGUNDOS \033[0m"
